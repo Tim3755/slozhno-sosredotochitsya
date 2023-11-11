@@ -19,6 +19,7 @@
   position: relative;
   gap: 55px;
   min-height: 668px;
+  max-height: 100vh;
   padding: 10px;
 }
 .title {
@@ -133,7 +134,7 @@
 }
 .card {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 .section {
   display: grid;
