@@ -3,10 +3,75 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
+:root.page.theme_light {
+  --accent-color: #ff8dcb;
+}
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+  background-image: url(../images/cover-image-light.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.theme_light .decorated-zone::before {
+  border-block-start: 1px solid #353430;
+  border-inline-end: 1px solid #353430;
+}
+.theme_light .decorated-zone::after {
+  border-block-end: 1px solid #353430;
+  border-inline-start: 1px solid #353430;
+}
+.theme_light .decor-sign::before,
+.theme_light .decor-sign::after {
+  display: none;
+}
+.theme_light .header-text {
+  color: #353430; 
+}
+.theme_light .title-decor {
+  background-color: #ff8dcb;
+}
+.theme_light .title {
+  color: #FFC2E6;
+  text-shadow: 4px 4px 0px #ff8dcb;
+}
+.theme_light .header__theme-menu-button,
+.theme_light .article-title,
+.theme_light .card-text,
+.theme_light .text-link {
+  color: #353430;
+}
+.theme_light .text-link {
+  text-shadow: 2px 1px 0px #FF8DCB;
+}
+.theme_light .text-link:hover {
+  text-decoration: underline;
+text-decoration-thickness: 1px;
+}
+.theme_light  .text-link:focus-visible {
+  border: 1px solid #353430;
+}
+.theme_light .footer-title {
+  text-shadow: 2px 2px 0px #ff8dcb;
+}
+.theme_light .header__theme-menu-button_type_light {
+  border: 1px solid #353430;
+}
+.theme_light .header__theme-menu-button_type_dark {
+border: none;
+}
+.theme_light .header__theme-menu-button_type_dark:hover {
+border: 1px solid #32312D66;
+}
+.theme_light .header__theme-menu-button_type_dark:focus-visible {
+  outline: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #353430;
 }
