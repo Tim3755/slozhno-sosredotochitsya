@@ -7,11 +7,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "IBM Plex mono";
-  min-width: 375px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .title-decor {
-  background-color: #ff0070;
+  background-color: var(--accent-color);
 }
 .header {
   display: grid;
@@ -19,8 +18,8 @@
   position: relative;
   gap: 55px;
   min-height: 668px;
-  max-height: 100vh;
   padding: 10px;
+  max-height: 100vh;
 }
 .title {
   color: #db00ff;
@@ -30,7 +29,7 @@
 }
 .header-title {
   justify-self: start;
-  text-shadow: 4px 4px 0px #ff0070;
+  text-shadow: 4px 4px 0px var(--accent-color);
 }
 .decorated-zone::before {
   content: "";
@@ -67,7 +66,7 @@
   height: 9px;
   border-radius: 100%;
   background-color: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px #ff0070);
+  filter: drop-shadow(0px 0px 4px var(--accent-color));
   top: 18px;
   right: 19px;
 }
@@ -110,8 +109,15 @@
   border-left: none;
   outline: none;
 }
-.header-text {
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+.header-text,
+.section-title,
+.card-subtitle {
   color: #000028;
+}
+.header-text {
   line-height: 23.4px;
   font-weight: 700;
   justify-self: end;
@@ -154,7 +160,7 @@
   line-height: 23.4px;
 }
 .text-link {
-  text-shadow: 2px 1px 0px #ff0070;
+  text-shadow: 2px 1px 0px var(--accent-color);
   text-decoration: none;
 }
 .text-link:hover {
@@ -181,10 +187,9 @@
   position: relative;
   padding: 10px;
   min-height: 667px;
-  max-height: 100vh;
 }
 .footer-title {
-  text-shadow: 2px 2px 0px #ff0070;
+  text-shadow: 2px 2px 0px var(--accent-color);
   margin-block-end: 10px;
 }
 
@@ -273,10 +278,11 @@
   .header {
     display: grid;
     gap: 165px;
+    min-height: 1024px;
   }
   .header__theme-menu {
     margin-block-start: 173px;
-    min-height: 1024px;
+
   }
   .focus {
     display: grid;
@@ -295,7 +301,7 @@
   }
 }
 /* Для десктопа */
-@media (width >= 769px) {
+@media (width >= 1024px) {
   .header {
     display: grid;
     min-height: 768px;
@@ -336,3 +342,5 @@
     min-height: 768px;
   }
 }
+
+ 
