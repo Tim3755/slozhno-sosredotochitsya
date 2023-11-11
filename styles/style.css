@@ -164,6 +164,7 @@
 }
 .img-card {
   display: grid;
+  gap: 10px;
 }
 .card-image {
   width: 100%;
@@ -177,7 +178,7 @@
   position: relative;
   padding: 10px;
   min-height: 667px;
-  height: 100vh;
+  max-height: 100vh;
 }
 .footer-title {
   text-shadow: 2px 2px 0px #ff0070;
