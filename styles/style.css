@@ -140,6 +140,9 @@
   display: grid;
   gap: 10px;
 }
+.section-title {
+  height: 24px;
+}
 .card-title {
   color: var(--accent-color);
 }
@@ -273,6 +276,7 @@
   }
   .header__theme-menu {
     margin-block-start: 173px;
+    min-height: 1024px;
   }
   .focus {
     display: grid;
@@ -285,6 +289,9 @@
   .five-advices {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+  .footer {
+    min-height: 1024px;
   }
 }
 /* Для десктопа */
@@ -324,5 +331,8 @@
   .five-advices {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+  .footer {
+    min-height: 768px;
   }
 }
