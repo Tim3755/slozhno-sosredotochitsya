@@ -1,17 +1,17 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: url('../images/cover-image-dark.png');
+  background-image: url("../images/cover-image-dark.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: 'IBM Plex mono';
-  width: 100vw;
+  font-family: "IBM Plex mono";
+  min-width: 375px;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 .title-decor {
-  background-color: #FF0070;
+  background-color: #ff0070;
 }
 .header {
   display: grid;
@@ -22,17 +22,17 @@
   padding: 10px;
 }
 .title {
-  color: #DB00FF;
+  color: #db00ff;
   font-weight: 700;
   line-height: 95.7px;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 .header-title {
   justify-self: start;
-  text-shadow: 4px 4px 0px #FF0070;
+  text-shadow: 4px 4px 0px #ff0070;
 }
 .decorated-zone::before {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   border-block-start: 1px solid var(--accent-color);
@@ -42,7 +42,7 @@
   position: absolute;
 }
 .decorated-zone::after {
-  content: '';
+  content: "";
   width: 25px;
   height: 25px;
   border-block-end: 1px solid var(--accent-color);
@@ -52,21 +52,21 @@
   position: absolute;
 }
 .decor-sign::before {
-content:'REC';
-position: absolute;
-color: var(--accent-color);
-font-size: 18px;
-top: 10px;
-right: 38px;
+  content: "REC";
+  position: absolute;
+  color: var(--accent-color);
+  font-size: 18px;
+  top: 10px;
+  right: 38px;
 }
 .decor-sign::after {
-  content:'';
+  content: "";
   position: absolute;
   width: 9px;
   height: 9px;
   border-radius: 100%;
   background-color: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px #FF0070);
+  filter: drop-shadow(0px 0px 4px #ff0070);
   top: 18px;
   right: 19px;
 }
@@ -100,7 +100,7 @@ right: 38px;
   border: solid 1px var(--accent-color);
 }
 .header__theme-menu-button_type_light:hover {
-border: 1px solid rgba(255, 0, 112, 0.40);
+  border: 1px solid rgba(255, 0, 112, 0.4);
 }
 .header__theme-menu-button_type_light:focus-visible {
   border-top: none;
@@ -146,27 +146,27 @@ border: 1px solid rgba(255, 0, 112, 0.40);
   font-weight: 400;
 }
 .section-text {
-  color:  #F1B2CE;
+  color: #f1b2ce;
   line-height: 23.4px;
 }
 .text-link {
-  text-shadow: 2px 1px 0px #FF0070;
+  text-shadow: 2px 1px 0px #ff0070;
   text-decoration: none;
 }
 .text-link:hover {
-text-decoration: underline;
-text-decoration-thickness: 1px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 .text-link:focus-visible {
-  border: 1px solid #F1B2CE;
+  border: 1px solid #f1b2ce;
   outline: none;
 }
 .img-card {
   display: grid;
 }
 .card-image {
- width: 100%;
- height: 100%;
+  width: 100%;
+  height: 100%;
 }
 .footer {
   margin-block-start: 40px;
@@ -179,13 +179,12 @@ text-decoration-thickness: 1px;
   height: 100vh;
 }
 .footer-title {
-  text-shadow: 2px 2px 0px #FF0070;
+  text-shadow: 2px 2px 0px #ff0070;
   margin-block-end: 10px;
-  
 }
 
 /* Для планшета и десктопа */
-@media (  width >= 376px) {
+@media (width >= 376px) {
   .header {
     padding: 20px;
   }
@@ -200,16 +199,16 @@ text-decoration-thickness: 1px;
   .decor-sign::before {
     top: 20px;
     right: 48px;
-   }
-   .decor-sign::after {
-     top: 28px;
-     right: 29px;
-   }
+  }
+  .decor-sign::after {
+    top: 28px;
+    right: 29px;
+  }
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
   .header-title {
-   margin-inline-start: -20px;
+    margin-inline-start: -20px;
   }
   .header-text {
     width: calc(50vw - 20px);
@@ -242,7 +241,7 @@ text-decoration-thickness: 1px;
   .ice-cream-img {
     grid-row: 2/4;
     object-fit: cover;
-}
+  }
   .tape-img {
     grid-row: 3/5;
     object-fit: cover;
@@ -264,14 +263,14 @@ text-decoration-thickness: 1px;
   }
 }
 
-/* Для планшета */ 
-@media (768px >= width >= 376px ) {
+/* Для планшета */
+@media (768px >= width >= 376px) {
   .header {
     display: grid;
     gap: 165px;
   }
   .header__theme-menu {
-   margin-block-start: 173px;
+    margin-block-start: 173px;
   }
   .focus {
     display: grid;
@@ -293,35 +292,35 @@ text-decoration-thickness: 1px;
     min-height: 768px;
     gap: 130px;
   }
-.header__theme-menu { 
-  width: 236px;
-  height: 26px;
-  justify-self: center;
-  margin-block-start: 0px;
-}
-.header__theme-menu-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.header-text {
-  height: 71px;
-}
-.focus {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-.concentration,
-.concentration-title {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-.section {
-  display: grid;
-  grid-template-rows: 23px;
-}
-.five-advices {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
+  .header__theme-menu {
+    width: 236px;
+    height: 26px;
+    justify-self: center;
+    margin-block-start: 0px;
+  }
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header-text {
+    height: 71px;
+  }
+  .focus {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .concentration,
+  .concentration-title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section {
+    display: grid;
+    grid-template-rows: 23px;
+  }
+  .five-advices {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
 }
