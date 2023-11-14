@@ -48,10 +48,6 @@
   text-decoration-thickness: 1px;
 }
 
-.theme_dark .text-link:focus-visible {
-  border: 1px solid var(--accent-color);
-}
-
 .theme_dark .footer-title {
   text-shadow: 2px 2px 0px var(--accent-color);
 }
