@@ -6,7 +6,27 @@
 :root .theme_dark {
   --accent-color: #ff0070;
 }
+@media (prefers-color-scheme: dark) {
+  .theme_auto .header__theme-menu-button_type_auto {
+    border: 1px solid var(--accent-color);
+  }
 
+  .theme_auto .header__theme-menu-button_type_dark {
+    border: none;
+  }
+
+  .theme_auto .header__theme-menu-button_type_dark:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+  }
+
+  .theme_auto .header__theme-menu-button_type_dark {
+    outline: none;
+  }
+
+  .theme_auto .header__theme-menu-button_type_dark:focus-visible {
+    border-bottom: 1px solid var(--accent-color);
+  }
+}
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
@@ -44,8 +64,7 @@
 }
 
 .theme_dark .text-link:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  border-block-end: 1px solid #f1b2ce;
 }
 
 .theme_dark .footer-title {

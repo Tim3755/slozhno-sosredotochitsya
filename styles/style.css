@@ -136,8 +136,8 @@
 }
 
 .header-text,
-.section-title,
-.card-subtitle {
+.card-title,
+.section-subtitle {
   color: #000028;
 }
 
@@ -197,13 +197,12 @@
 }
 
 .text-link {
-  text-shadow: 2px 1px 0px #ff0070;
   text-decoration: none;
+  text-shadow: 2px 1px 0px #ff0070;
 }
 
 .text-link:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
+  border-block-end: 1px solid #f1b2ce;
 }
 
 .text-link:focus-visible {
@@ -338,6 +337,7 @@
     display: grid;
     gap: 165px;
     min-height: 1024px;
+    height: 100vh;
   }
 
   .header__theme-menu {
@@ -374,6 +374,7 @@
 
   .footer {
     min-height: 1024px;
+    height: 100vh;
   }
 }
 /* Для десктопа */
@@ -381,6 +382,7 @@
   .header {
     display: grid;
     min-height: 768px;
+    height: 100vh;
     gap: 130px;
   }
 
@@ -427,5 +429,6 @@
 
   .footer {
     min-height: 768px;
+    height: 100vh;
   }
 }
