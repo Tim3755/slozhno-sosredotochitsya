@@ -13,14 +13,11 @@
 
   .theme_auto .header__theme-menu-button_type_dark {
     border: none;
+    outline: none;
   }
 
   .theme_auto .header__theme-menu-button_type_dark:hover {
     border: 1px solid rgba(255, 0, 112, 0.4);
-  }
-
-  .theme_auto .header__theme-menu-button_type_dark {
-    outline: none;
   }
 
   .theme_auto .header__theme-menu-button_type_dark:focus-visible {
